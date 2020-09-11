@@ -1,0 +1,32 @@
+{
+    "name": "A Simple Weather App by Eskay",
+    "short_name": "WeatherFly",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#ccc",
+    "theme_color": "#5faae5",
+    "icons": [
+        {
+            "src": "/src/images/icons/wa-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/src/images/icons/wa-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/src/images/icons/wa-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/src/images/icons/wa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

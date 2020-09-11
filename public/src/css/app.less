@@ -1,0 +1,150 @@
+// out: app.css
+
+@font1 : {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+@font2: {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    background-image: url('../images/wa-bg.png');
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(70, 205, 247);
+}
+
+
+.mainBody{
+    background-image: url('../images/wa-gif.gif');
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 0px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(20, 20, 107, 0.719);
+}
+
+@media(min-width: 600px){
+    .mainBody{
+        padding: 50px 50px 20px 50px;
+    }
+}
+
+@media(max-width: 600px){
+    .mainBody{
+        padding: 50px 20px 10px 20px;
+    }
+}
+
+.logo{
+    height: 80px;
+}
+
+.formDiv{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.search{
+    height: 40px;
+    border: 0px solid rgba(238, 238, 240, 0.5);
+    border-radius: 15px;
+    width: 60%;
+    box-shadow: 2px 2px 10px rgba(250,218,4, 0.5);
+    padding-left: 5px; 
+    font-size: 16px;
+    @font1();
+
+}
+.search:hover{
+    animation-name: formAnim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes formAnim{
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.search::placeholder{
+    padding-left: 15px; 
+    font-size: 16px;
+}
+
+.searchBtn{
+    height: 40px;
+    background-color: #588aff;
+    color: white;
+    font-size: 18px;
+    border: 0px;
+    margin-left: 5px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 1px 1px 10px rgba(250,218,4, 0.5);
+    cursor: pointer;
+    @font2();
+}
+
+.searchBtn:hover{
+    animation-name: btnAnim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes btnAnim{
+    0%{
+        background-color: #588aff;
+    }
+    100%{
+        background-color:rgba(250,218,4);
+        color: black;
+    }
+}
+
+.cityInfo{
+    margin-top: 70px;
+}
+
+.cityName{
+    @font1();
+    font-size: 2rem;
+}
+
+#countryName {
+    @font2();
+    
+}
+
+#weatherImg{
+    height: 150px;
+    margin-top: 30px;
+}
+
+#cityTemp{
+    @font1();
+    font-size: 90px;
+}
+.celcius{
+    @font2();
+    font-size: 30px;
+}
+
+.description{
+    @font1();
+    font-size: 20px;
+}
